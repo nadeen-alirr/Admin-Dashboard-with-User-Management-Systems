@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+main{
+   
+    min-height: 100vh;
+    background: #ffb606;
+}
+.form_container{
+    padding: 3%;
+    background: white ;
+    text-align: center;
+}
+.header{
+    font-size: 40px;
+    font-weight: 600;
+    /* padding: 5%; */
+}
+.form_container form{
+    margin: 40px 0;
+
+}
+form input {
+    height: 40px;
+    padding: 0 38px;
+    border: #bfbfbf 1px solid;
+    outline: none;
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 1;
+    width: 100%;
+  
+    /* Transition for border changes */
+    transition: border-bottom-width 0.3s ease;
+  }
+  
+  form input:focus {
+    border-bottom-width: 5px; /* Increase border-bottom-width on focus */
+  }
+form input ::placeholder{
+    color: lightgray;
+    font-size: small;
+}
+form .filed .i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    left: 15px;
+    color: black;
+}
+form .filed .error_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    right: 15px;
+    color: red;
+
+}
+form .filed  .input_area{
+    position: relative;
+}
+form .filed .error_txt{
+    color: red;
+    margin-top: 2px;
+    text-align: left;
+    font-size: small;
+}
+form .input_area{
+    width: 100%;
+    margin-top: 8%;
+   
+}
+form .filed.shake{
+    animation: shake 0.2s ease-in-out  ;
+    -webkit-animation: shake 0.2s ease-in-out  ;
+}
+@keyframes shake{
+    0% ,100% {
+        margin-left: 0;
+    }
+    20% ,100%{
+        margin-left:-12px ;
+    }
+    0% ,100% {
+        margin-left: 12px;
+    }
+}
+form .filed .error{
+    display: none;
+}
+form .filed.error .error{
+    display: block;
+}
+form .pass-link{
+    text-align: left;
+    margin-top: -1px;
+}
+.form_container a{
+    text-decoration: none;
+    color: #5372F0;
+}
+.form_container a:hover{
+    text-decoration: underline;
+}
+form input[type ="submit"]{
+    margin-top: 15px;
+    background: #ffb606;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -ms-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    border: none;
+}
+/*  */
+
+
+  .image_log_reg {
+    height: auto;
+    max-width: 90%;
+    transition: max-width 0.3s ease;
+    animation: moveUpDown 3s linear infinite;
+    -webkit-animation: moveUpDown 3s linear infinite;
+}
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+}
+    50% {
+      transform: translateY(-25px);
+    
+}
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .image_log_reg {
+      max-width: 100%; 
+    }
+  }
+  .options {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    padding: 3%;
+    font-size: small;
+    background-color: #fff; /* Set background color */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 2%;
+  }
+  
+  /* Style the label */
+  .options label {
+    margin-right: 10px; /* Add space between label and select */
+    font-weight: 500; /* Make the label bold */
+    font-size: small;
+  }
+  
+  /* Style the select element */
+  .options select {
+    width: 100%; /* Expand the select element to fill the available width */
+    padding: 5px;
+    border: none; /* Remove default border */
+    background-color: #fff; /* Set background color */
+    border-radius: 3px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+  }
